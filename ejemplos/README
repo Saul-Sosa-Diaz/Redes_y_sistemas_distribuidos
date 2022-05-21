@@ -1,0 +1,69 @@
+
+
+
+                     REDES Y SISTEMAS DISTRIBUIDOS
+
+
+==========================================================================
+Ejemplos de programación de sockets
+==========================================================================
+
+Este directorio contiene dos ejemplos sencillos de programación de
+sockets en C bajo Linux, que se explican en la asignatura
+de Redes y Sistemas Distribuidos de 2º de grado de Ingeniería Informática
+de la ESTII de la Universidad de La Laguna.
+
+Antes de compilar debe tener instalados:
+-gcc
+-make
+
+Para compilar simplemente ejecute el comando make dentro del directorio.
+
+Si no se produce ningún error de compilación deberán generarse cuatro
+ficheros ejecutables.
+- socket_udp_servidor
+- socket_udp_cliente
+- socket_tcp_servidor
+- socket_tcp_cliente
+
+
+===========================================================================
+Servidor y cliente UPD sencillo: Servicio de hora
+===========================================================================
+Los dos pimeros corresponden a un servicio de hora implementado
+sobre UDP. El puerto que escucha el servidor es el 3300
+
+Dentro del directorio, deberá ejecutar
+./socket_udp_servidor
+En otra consola deberá ejecutar el cliente:
+./socket_udp_cliente localhost 3300
+
+En este caso el programa servidor deberán residir en la misma máquina.
+Para probarlo sobre una máquina remota mueva el cliente o el servidor
+a una segunda máquina, y en la llama al servidor sustituya 'localhost' por el
+número IP del servidor.
+
+El programa cliente deberá mostrar la hora por pantalla.
+
+
+
+===========================================================================
+Servidor y cliente TCP sencillo: Servicio de cronometraje.
+===========================================================================
+
+Los dos últmos ficheros corresponden a un servicio de cronometraje 
+implementado sobre TCP. El puerto que  escucha el servidor es el 3300.
+
+Dentro del directorio, deberá ejecutar
+./socket_tcp_servidor
+En otra consola deberá ejecutar el cliente:
+./socket_tcp_cliente localhost 3300
+
+En este caso el programa servidor deberán residir en la misma máquina.
+Para probarlo sobre una máquina remota mueva el cliente o el servidor
+a una segunda máquina, y en la llama al servidor sustituya 'localhost' por el
+número IP del servidor.
+
+
+El cliente deberá mostrar una cuenta atrás en pantalla. El servidor mostrará
+también algunos mensajes en pantalla que permitirán depurar el código.

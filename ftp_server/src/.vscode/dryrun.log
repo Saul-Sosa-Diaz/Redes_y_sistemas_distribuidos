@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/saul/Universidad/Segundo/Redes y sistemas distribuidos/Redes_y_sistemas_distribuidos/ftp_server/src'
+g++ -g -std=gnu++0x  ClientConnection.cpp FTPServer.cpp ftp_server.cpp -o ftp_server -lpthread
+make: Leaving directory '/home/saul/Universidad/Segundo/Redes y sistemas distribuidos/Redes_y_sistemas_distribuidos/ftp_server/src'
+ 
