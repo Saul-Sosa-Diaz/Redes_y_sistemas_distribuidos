@@ -109,7 +109,9 @@ void ClientConnection::WaitForRequests() {
     if (COMMAND("USER")) {  //<-----------------------------------------------------------------------
       fscanf(fd, "%s", arg);
       fprintf(fd, "331 User name ok, need password\n");
-    } else if (COMMAND("PWD")) {   //<-----------------------------------------------------------------------
+    } else if (COMMAND("PWD")) {  //<-----------------------------------------------------------------------
+      auto path = get_current_dir_name();
+      fprintf(fd, "257 %s current working directory\n", path);
     } else if (COMMAND("PASS")) {  //<-----------------------------------------------------------------------
       fscanf(fd, "%s", arg);
       if (strcmp(arg, "1234") == 0) {
@@ -224,9 +226,9 @@ void ClientConnection::WaitForRequests() {
         fprintf(fd, "450 Requested file action not taken. File unavailable.\n");
         close(data_socket);
       } else {
-        //Ir metiendo contenido del directorio en un buffer y luego mandarlo
+        // Ir metiendo contenido del directorio en un buffer y luego mandarlo
         while ((directory_element = readdir(directory)) != NULL) {
-          size = sprintf(buffer, "%s\n", directory_element->d_name); 
+          size = sprintf(buffer, "%s\n", directory_element->d_name);
           send(data_socket, buffer, size, 0);
         }
       }
