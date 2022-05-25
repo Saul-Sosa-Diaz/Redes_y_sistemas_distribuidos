@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat May 21 12:21:14 2022
+# Make data base, printed on Wed May 25 21:37:28 2022
 
 # Variables
 
@@ -49,7 +49,7 @@ SNAP_DATA = /var/snap/code/97
 # environment
 VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{"*":"es"},"_languagePackId":"125a9a608456aa5e8a25d0a18c7b1d68.es","_translationsConfigFile":"/home/saul/.config/Code/clp/125a9a608456aa5e8a25d0a18c7b1d68.es/tcf.json","_cacheRoot":"/home/saul/.config/Code/clp/125a9a608456aa5e8a25d0a18c7b1d68.es","_resolvedLanguagePackCoreLocation":"/home/saul/.config/Code/clp/125a9a608456aa5e8a25d0a18c7b1d68.es/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"/home/saul/.config/Code/clp/125a9a608456aa5e8a25d0a18c7b1d68.es/corrupted.info","_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:56533
+JOURNAL_STREAM = 8:54391
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -75,7 +75,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 _ = /snap/code/97/usr/share/code/code
 # environment
-MANAGERPID = 1692
+MANAGERPID = 1610
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -89,7 +89,7 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/SaulUbuntu:@/tmp/.ICE-unix/1915,unix/SaulUbuntu:/tmp/.ICE-unix/1915
+SESSION_MANAGER = local/SaulUbuntu:@/tmp/.ICE-unix/1831,unix/SaulUbuntu:/tmp/.ICE-unix/1831
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -107,7 +107,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 40d1766ddb5a49a9b5d5703af6926b60
+INVOCATION_ID = ce473ed483f14402a4454e20f7676ebf
 # environment
 GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
@@ -119,7 +119,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 23583
+GIO_LAUNCHED_DESKTOP_FILE_PID = 26890
 # automatic
 %F = $(notdir $%)
 # environment
@@ -133,7 +133,7 @@ PWD = /home/saul/Universidad/Segundo/Redes y sistemas distribuidos/Redes_y_siste
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1877
+SSH_AGENT_PID = 1792
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -183,7 +183,7 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-469f826d-24ea-4753-bb81-3e22cbd48e07.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f12dadc3-cc17-42d6-994c-121a247e9128.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -255,7 +255,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 23685
+VSCODE_PID = 26939
 # variable set hash-table stats:
 # Load=123/1024=12%, Rehash=0, Collisions=18/148=12%
 
@@ -265,9 +265,9 @@ VSCODE_PID = 23685
 
 # Directories
 
-# . (device 66311, inode 11272375): 16 files, no impossibilities.
+# . (device 66311, inode 11272375): 17 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -275,32 +275,32 @@ VSCODE_PID = 23685
 
 # Files
 
-all: socket_tcp_cliente socket_tcp_servidor socket_udp_cliente socket_udp_servidor
+all: ftp_server
 #  Command line target.
 #  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-socket_udp_cliente:
-#  Implicit rule search has been done.
  
-#  Last modified 2022-05-13 18:51:01.826734234
+#  File does not exist.
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2012-02-28 16:31:26
+#  Last modified 2018-09-05 13:46:04
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
-socket_tcp_servidor:
+ftp_server.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-13 18:51:01.79073346
+#  Last modified 2022-05-21 13:28:50.109053086
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ClientConnection.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-25 20:30:59.01975423
 #  File has been updated.
 #  Successfully updated.
 
@@ -310,41 +310,42 @@ socket_tcp_servidor:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+FTPServer.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:25:32.619232179
+#  File has been updated.
+#  Successfully updated.
+
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	$(RM) ftp_server *~
+
+ftp_server: ClientConnection.cpp FTPServer.cpp ftp_server.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-25 21:34:57.807843934
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 7):
-	$(RM) socket_tcp_cliente socket_tcp_servidor socket_udp_cliente socket_udp_servidor *~
-
-# Not a target:
-socket_udp_servidor:
-#  Implicit rule search has been done.
-#  Last modified 2022-05-13 18:51:01.862735009
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-socket_tcp_cliente:
-#  Implicit rule search has been done.
-#  Last modified 2022-05-13 18:51:01.754732684
-#  File has been updated.
-#  Successfully updated.
+	g++ -g -std=gnu++0x  ClientConnection.cpp FTPServer.cpp ftp_server.cpp -o ftp_server -lpthread
 
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/24=0%
+# Load=9/1024=1%, Rehash=0, Collisions=0/25=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 279 B / avg = 12 B
-# current buf: size = 8162 B / used = 279 B / count = 22 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 237 B / avg = 10 B
+# current buf: size = 8162 B / used = 237 B / count = 23 / avg = 10 B
 
-# strcache performance: lookups = 33 / hit rate = 33%
+# strcache performance: lookups = 36 / hit rate = 36%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=1/33=3%
-# Finished Make data base on Sat May 21 12:21:14 2022
+# Load=23/8192=0%, Rehash=0, Collisions=1/36=3%
+# Finished Make data base on Wed May 25 21:37:28 2022
 
  
