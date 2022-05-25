@@ -154,7 +154,7 @@ void ClientConnection::WaitForRequests() {
         return;
       }
 
-      fprintf(fd, "227 Entering Passive Mode (127,0,0,1,%d,%d).\n", p1, p2);
+      fprintf(fd, "227 Entering Passive Mode (127,0,0,1,%d,%d).\n", p2, p1);
       fflush(fd);
 
       data_socket = accept(s, (struct sockaddr *)&socket, &longitud);
