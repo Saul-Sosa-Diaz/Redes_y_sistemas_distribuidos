@@ -1,8 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/saul/Universidad/Segundo/Redes y sistemas distribuidos/Redes_y_sistemas_distribuidos/ejemplos'
-cc     socket_tcp_cliente.c   -o socket_tcp_cliente
-cc     socket_tcp_servidor.c   -o socket_tcp_servidor
-cc     socket_udp_cliente.c   -o socket_udp_cliente
-cc     socket_udp_servidor.c   -o socket_udp_servidor
-make: Leaving directory '/home/saul/Universidad/Segundo/Redes y sistemas distribuidos/Redes_y_sistemas_distribuidos/ejemplos'
- 
